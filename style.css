@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta&display=swap');
+
+body{
+    justify-content: center;
+}
+
+
+*{
+    color: white;
+    font-family: "Allerta", sans-serif;
+    font-style: normal;
+}
+
+.logologin{
+    width: 595px;
+    height: 335px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.txtInferior{
+    color: white;
+    border: 4px solid #45012B;
+    font-size: 16px;
+}
+
+.txt1{
+    font-size: 24px;
+}
+
+.container{
+    width: 100%;
+    max-width: 400px;
+    margin: 56px auto 0px;
+    padding: 0 24px;
+    border: 4px solid transparent;
+    border-radius: 20px;
+    background: #811B77;
+}

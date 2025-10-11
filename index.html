@@ -1,10 +1,30 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Tela de Login | NyNus</title>
+    </head>
+    <body>
+        <div class="main">
+            <img src="capa-login" class="capa">
+            <div class="content-login">
+                <img src="img/NyNus_Logo.png" class="logo">
+                <form class="form-login">
+                    <p>
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" placeholder="contato_nynus@gmail.com" required>
+                    </p> 
+                    <p>
+                        <label for="senha">Senha:</label>
+                        <input id="senha" type="password" placeholder="*******" required>
+                    </p>
+                    <button onclick="login()">Entrar</button>
+                </form>
+                <p>Não tem conta? <span>Cadastre-se</span></p>
+            </div>
+        </div>
+    </body>
 </html>

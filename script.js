@@ -1,5 +1,5 @@
 function login() {
-    const emailUser = document.getElementById("email").value;
+    const emailUser = document.getElementById("username").value;
     const senhaUser = document.getElementById("senha").value;
 
     const emailVerif = "teste@gmail.com";

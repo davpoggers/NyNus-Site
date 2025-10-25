@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Allerta&display=swap');
 
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 * {
     margin: 0;
     padding: 0;

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="icon" type="image/png" href="../img/icons/site_icon.png"/>
+  <script src="script.js" defer></script>
+  <title>ENTRE AGORA!!!!!!!!!</title>
+</head>
+<body>
+  <div class="container">
+    <div class="tela-login">
+      <img src="../img/NyNus_Logo_Shadow.png" class="logo-nynus" />
+
+      <form class="form-login">
+        <p class="palavrinhas">USUÁRIO:</p>
+        <input id="username" type="text" required />
+
+        <p class="palavrinhas">SENHA:</p>
+        <div class="senha-container">
+          <input id="senha" type="password" required />
+          <img id="toggleSenha" src="../img/icons/eye.svg" alt="Mostrar senha" />
+        </div>
+      </form>
+
+      <button id="btn-login" type="button" onclick="login()">LOGIN</button>
+
+      <a class="forget-senha" href="">Esqueci minha senha</a>
+
+      <div class="containerSenha">
+        <p class="pConta">Não tem uma conta?</p>
+        <a class="do-cadastro" href="../pagina_pre_cadastro/pre_cadastro_pagina.html">Fazer cadastro</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

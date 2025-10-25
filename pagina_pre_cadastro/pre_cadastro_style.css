@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Allerta&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #fff, #e1c0e9);
+  font-family: "Allerta", Courier, monospace;
+  color: #efefef;
+  gap: 60px; 
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-nynus-grande {
+  width: 400px; 
+  height: auto;
+  margin-right: 50%;
+  margin-bottom: 20%;
+}
+
+.cadastro-opcoes {
+  width: 380px; 
+  min-height: 540px;
+  border-radius: 40px;
+  background-color: #811b77;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  border: solid 4px #56007e;
+  overflow: hidden;
+  gap: 25px; 
+}
+
+.cadastro-opcoes h1 {
+  font-size: 26px;
+  font-family: "Allerta", Courier, monospace;
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #efefef;
+  text-shadow: 0 6px 5px rgba(0, 0, 0, 0.5);
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: rgb(199, 145, 186);
+}
+
+
+#email_phone {
+  width: 100%;
+  height: 55px;
+  padding: 15px 45px 15px 15px;
+  border-radius: 10px;
+  border: solid 2px #b55385;
+  background-color: #ffdbf7;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.45);
+  font-family: "Allerta", Courier, monospace;
+  font-size: 16px;
+}
+
+#email_phone::placeholder {
+  color: #999;
+}
+
+.btn-proximo {
+  width: 100%;
+  max-width: 200px; 
+  height: 50px;
+  border: solid 2px #37004d;
+  font-size: 24px;
+  text-shadow: 0 6px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.45);
+  border-radius: 10px;
+  padding: 0px;
+  background-color: #8549a1;
+  text-align: center;
+  color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: "Allerta", Courier, monospace;
+}
+
+.btn-proximo:hover {
+  background-color: #65317a;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  color: #efefef;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #efefef;
+  opacity: 0.5;
+}
+
+.divider::before { margin-right: 10px; }
+.divider::after { margin-left: 10px; }
+
+.btn-social {
+  width: 80%;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  background-color: #EFEFEF;
+  color: #333;
+  border: solid 2px #b55385;
+  font-size: 16px;
+  font-family: "Allerta", Courier, monospace;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-social:hover {
+  background-color: #f3e4f567;
+}
+
+.btn-social img {
+  width: 24px;
+  height: 24px;
+}
+
+.login-link {
+  font-size: 14px;
+  color: #FFFFFF; 
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: #450126;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.login-link a {
+  color: #b55385;
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: #450126;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-decoration: underline;
+}
+
+.disclaimer {
+  font-size: 12px;
+  color: #FFFFFF; 
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: #450126;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.disclaimer a {
+  color: #b55385;
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: #450126;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-decoration: underline;
+}

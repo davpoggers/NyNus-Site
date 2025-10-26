@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="pre_cadastro_style.css" rel="stylesheet"/>
   <link rel="icon" type="image/png" href="../img/icons/site_icon.png"/>
+  <script src="pre_cadastro_script.js" defer></script>
   <title>NyNus - Cadastro</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
     <div class="cadastro-opcoes">
       <h1>Cadastrar-se</h1>
       <input id="email_phone" type="text" placeholder="Email/Número de telefone..." />
-      <button class="btn-proximo">PRÓXIMO</button>
+      <button class="btn-proximo" id="proximoBtn" type="button">PRÓXIMO</button>
       <div class="divider">OU</div>
       <button class="btn-social google">
         <img src="../img/icons/google_icon.png" alt="logo do Google" />
@@ -34,6 +35,18 @@
         Ao se inscrever, você concorda com as políticas da NyNus
         <a href="#">Termos de Serviço</a> & <a href="#">Política de Privacidade</a>.
       </p>
+      
+      <div id="popup" class="popup-overlay">
+        <div class="popup-box">
+          <p>Nós enviaremos um link de verificação via<br><strong>[SMS/e-mail]</strong> para
+            <strong>[SMS/e-mail]</strong></p>
+          <div class="popup-buttons">
+            <button id="cancelarBtn">Cancelar</button>
+            <button id="confirmarBtn">Confirmar</button>
+          </div>
+        </div>
+      </div>
+      
     </div>
   </div>
 </body>

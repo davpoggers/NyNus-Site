@@ -17,6 +17,6 @@ if (proximoBtn && popup && cancelarBtn && confirmarBtn) {
   confirmarBtn.addEventListener('click', () => {
     popup.classList.remove('show');
     document.body.style.overflow = '';
-    // pra redirecionar depois window.location.href = '../pagina_cadastro/pagina_cadastro.html';
+    window.location.href = '../pagina_cadastro/pagina_cadastro.html';
   });
 }

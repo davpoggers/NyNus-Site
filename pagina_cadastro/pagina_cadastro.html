@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NyNus - Criar Conta</title>
+  <link rel="stylesheet" href="cadastro_style.css" />
+  <link rel="icon" type="image/png" href="../img/icons/site_icon.png" />
+  <script src="cadastro_script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Lado Esquerdo -->
+    <div class="lado-esquerdo">
+      <img src="../img/NyNus_Logo_Shadow.png" class="logo-nynus" alt="Logo NyNus">
+      <strong class="slogan">Feito para quem se veste de si mesmo.</strong>
+    </div>
+
+    <!-- Lado Direito: Cadastro -->
+    <div class="lado-direito">
+      <h1>CADASTRO</h1>
+      <form id="form-cadastro" class="form-cadastro">
+        <div class="linha-inputs">
+          <div class="campo">
+            <label for="nome">NOME:</label>
+            <input type="text" id="nome" required>
+          </div>
+          <div class="campo">
+            <label for="sobrenome">SOBRENOME:</label>
+            <input type="text" id="sobrenome" required>
+          </div>
+        </div>
+
+        <div class="linha-inputs">
+          <div class="campo">
+            <label for="nascimento">DATA DE NASC:</label>
+            <input type="date" id="nascimento" placeholder="DD/MM/AA" required>
+          </div>
+          <div class="campo">
+            <label for="genero">GÊNERO:</label>
+            <select id="genero" required>
+              <option value="" disabled selected>Selecione</option>
+              <option>Masculino</option>
+              <option>Feminino</option>
+              <option>Outro</option>
+              <option>Prefiro não dizer</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="linha-inputs">
+          <div class="campo senha">
+            <label for="senha">SENHA:</label>
+            <div class="senha-container">
+              <input type="password" id="senha" required>
+              <img src="../img/icons/eye.svg" id="toggleSenha1" class="toggle-eye" alt="Mostrar senha">
+            </div>
+          </div>
+
+          <div class="campo senha">
+            <label for="confirmar">CONFIRMAR SENHA:</label>
+            <div class="senha-container">
+              <input type="password" id="confirmar" required>
+              <img src="../img/icons/eye.svg" id="toggleSenha2" class="toggle-eye" alt="Mostrar senha">
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" id="criarConta">CRIAR CONTA</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

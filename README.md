@@ -2,7 +2,7 @@
   <img src="https://github.com/davpoggers/NyNus-Site/blob/main/img/NyNus_Logo.png?raw=true" width="300" alt="Logo NyNus">
 </p>
 
-<h1 align="center">🪞 NyNus — Loja de Roupas Fictícia</h1>
+<h1 align="center">NyNus — Loja de Roupas Fictícia</h1>
 
 <p align="center">
   Protótipo de <b>Design Digital</b> e <b>Programação Web</b>, desenvolvido com <b>HTML, CSS e JavaScript</b> a partir de um layout no Figma.

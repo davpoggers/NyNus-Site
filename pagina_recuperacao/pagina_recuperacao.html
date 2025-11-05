@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="recuperacao_style.css" rel="stylesheet" />
+    <script src="recuperacao_script.js" defer></script>
+    <link rel="icon" type="image/png" href="../img/icons/site_icon.png" />
+    <title>NyNus - Recuperação de Senha</title>
+</head>
+<body>
+    <div class="container">
+        <div class="recuperacao-box">
+            <h1>Recuperação de senha</h1>
+            <p>Digite o endereço de e-mail ou número de telefone correspondente</p>
+            <input id="email_phone" type="text" placeholder="Email/Número de telefone..." />
+            <button class="btn-continuar" id="continuarBtn" type="button">CONTINUAR</button>
+            <p class="link-login">
+                <a href="../pagina_login/teste.html">Voltar para a tela de login.</a>
+            </p>
+        </div>
+    </div>
+    <div id="popup" class="popup-overlay">
+        <div class="popup-box">
+          <p>Nós enviaremos um link de verificação via<br><strong>[SMS/e-mail]</strong> para
+            <strong>[SMS/e-mail]</strong></p>
+          <div class="popup-buttons">
+            <button id="cancelarBtn">Cancelar</button>
+            <button id="confirmarBtn">Confirmar</button>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

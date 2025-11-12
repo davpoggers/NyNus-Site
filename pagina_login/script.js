@@ -1,4 +1,3 @@
-// Função de login
 function login() {
   const emailUser = document.getElementById("username").value;
   const senhaUser = document.getElementById("senha").value;
@@ -13,7 +12,7 @@ function login() {
   }
 }
 
-// Mostrar/ocultar senha
+
 document.addEventListener("DOMContentLoaded", () => {
   const senhaInput = document.getElementById("senha");
   const toggleSenha = document.getElementById("toggleSenha");

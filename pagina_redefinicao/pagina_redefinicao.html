@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="redefinicao_style.css" />
+  <link rel="icon" type="image/png" href="../img/icons/site_icon.png"/>
+  <script src="redefinicao_script.js" defer></script>
+  <title>NyNus - Redefinir Senha</title>
+</head>
+<body>
+  <div class="container">
+    <div class="tela-redefinicao">
+      <form class="form-redefinicao">
+        <h1 class="titulo">Redefinir Senha</h1>
+
+        <div class="senha-container">
+          <input id="novaSenha" type="password" required placeholder="Nova senha"/>
+          <img id="toggleNova" src="../img/icons/eye.svg" alt="Mostrar senha" />
+        </div>
+
+        <div class="senha-container">
+          <input id="repitaSenha" type="password" required placeholder="Repita a senha"/>
+          <img id="toggleRepita" src="../img/icons/eye.svg" alt="Mostrar senha" />
+        </div>
+
+        <button id="btn-confirmar" type="submit">CONFIRMAR</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

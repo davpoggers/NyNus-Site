@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NyNus - Página Principal</title>
+  <link rel="icon" type="image/png" href="../img/icons/site_icon.png"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="principal_style.css" rel="stylesheet"/>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+  <nav class="barra-superior d-flex align-items-center justify-content-between px-4">
+    <div class="container-logo">
+        <img src="../img/NyNus_Logo.png" alt="NyNus" height="50" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+
+    </div>
+
+    <div class="container-busca d-none d-md-flex align-items-center">
+      <input type="text" class="form-control input-busca" placeholder="">
+      <img src="../img/icons/search_icon.svg" class="img-icone-busca" alt="Buscar">
+    </div>
+
+    <div class="d-flex gap-4 grupo-icones align-items-center">
+      <img src="../img/icons/pedidos_icon.svg" alt="Pedidos" title="Pedidos">
+      <img src="../img/icons/compras_icon.svg" alt="Sacola" title="Sacola">
+      <img src="../img/icons/profile_icon.svg" alt="Perfil" title="Perfil">
+    </div>
+  </nav>
+
+  <div class="sub-menu px-3 d-flex align-items-center gap-3">
+    <img src="../img/icons/sidebar.svg" class="cursor-clicavel icone-nav-pequeno" alt="Menu">
+    <img src="../img/icons/assistencia_icon.svg" class="cursor-clicavel icone-nav-pequeno" alt="Ajuda">
+  </div>
+
+  <div class="container mt-4 conteudo-principal">
+    <div class="row g-3">
+      <div class="col-md-8">
+        <div class="banner-principal rounded d-flex align-items-end p-3">
+            <img src="content/spamton_ad.gif" class="img-fluid w-100 h-100 object-fit-cover rounded" alt="Banner Promoção">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="titulo-categoria text-end mb-2">CATEGORIAS</div>
+        <div class="row g-2">
+          <div class="col-6">
+            <div class="card-categoria">
+              <img src="content/novidades_categoria_icon.png" alt="Novidades">
+              <div class="legenda-cat">Novidades</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card-categoria">
+              <img src="content/roupas_categoria_icon.png" alt="Roupas">
+              <div class="legenda-cat">Roupas</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card-categoria">
+              <img src="content/acessorios_categoria_icon.png" alt="Acessórios">
+              <div class="legenda-cat">Acessórios</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card-categoria">
+              <img src="content/calcados_categoria_icon.png" alt="Calçados">
+              <div class="legenda-cat">Calçados</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card-categoria">
+              <img src="content/streetwear_categoria_icon.png" alt="Streetwear">
+              <div class="legenda-cat">Streetwear</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card-categoria">
+              <img src="content/promocoes_categoria_icon.png" alt="Promoções">
+              <div class="legenda-cat">Promoções</div>
+            </div>
+          </div>
+        </div>
+        <div class="text-end mt-2">
+            <a href="#" class="mais-categorias">Mais categorias ></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="secao-carrossel mt-5">
+      <h3>EM PROMOÇÃO</h3>
+      <div class="d-flex align-items-center gap-2 position-relative">
+        <div class="seta-nav">&lt;</div>
+        <div class="d-flex gap-3 overflow-hidden w-100 py-2 px-1">
+          <div class="card-produto flex-shrink-0">
+            <div class="placeholder-img-prod"></div>
+            <div class="rodape-prod"><span>Nome do Produto</span><span class="preco">R$ 00,00</span></div>
+          </div>
+           <div class="card-produto flex-shrink-0">
+            <div class="placeholder-img-prod"></div>
+            <div class="rodape-prod"><span>Nome do Produto</span><span class="preco">R$ 00,00</span></div>
+          </div>
+          <div class="card-produto flex-shrink-0">
+            <div class="placeholder-img-prod"></div>
+            <div class="rodape-prod"><span>Nome do Produto</span><span class="preco">R$ 00,00</span></div>
+          </div>
+        </div>
+        <div class="seta-nav">&gt;</div>
+      </div>
+    </div>
+
+    <div class="secao-carrossel mt-4">
+      <h3>RECOMENDADO</h3>
+      <div class="d-flex align-items-center gap-2 position-relative">
+        <div class="seta-nav">&lt;</div>
+        <div class="d-flex gap-3 overflow-hidden w-100 py-2 px-1">
+          <div class="card-produto flex-shrink-0">
+            <div class="placeholder-img-prod"></div>
+            <div class="rodape-prod"><span>Nome do Produto</span><span class="preco">R$ 00,00</span></div>
+          </div>
+          <div class="card-produto flex-shrink-0">
+            <div class="placeholder-img-prod"></div>
+            <div class="rodape-prod"><span>Nome do Produto</span><span class="preco">R$ 00,00</span></div>
+          </div>
+          <div class="card-produto flex-shrink-0">
+            <div class="placeholder-img-prod"></div>
+            <div class="rodape-prod"><span>Nome do Produto</span><span class="preco">R$ 00,00</span></div>
+          </div>
+        </div>
+        <div class="seta-nav">&gt;</div>
+      </div>
+    </div>
+
+    <div class="secao-carrossel mt-4 mb-5">
+      <h3>MAIS VENDIDOS</h3>
+      <div class="d-flex align-items-center gap-2 position-relative">
+        <div class="seta-nav">&lt;</div>
+        <div class="d-flex gap-3 overflow-hidden w-100 py-2 px-1">
+          <div class="card-produto flex-shrink-0">
+            <div class="placeholder-img-prod"></div>
+            <div class="rodape-prod"><span>Nome do Produto</span><span class="preco">R$ 00,00</span></div>
+          </div>
+          <div class="card-produto flex-shrink-0">
+            <div class="placeholder-img-prod"></div>
+            <div class="rodape-prod"><span>Nome do Produto</span><span class="preco">R$ 00,00</span></div>
+          </div>
+          <div class="card-produto flex-shrink-0">
+            <div class="placeholder-img-prod"></div>
+            <div class="rodape-prod"><span>Nome do Produto</span><span class="preco">R$ 00,00</span></div>
+          </div>
+        </div>
+        <div class="seta-nav">&gt;</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

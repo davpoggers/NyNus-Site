@@ -26,8 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (confirmarBtn) {
     confirmarBtn.addEventListener('click', () => {
-      // Pra redirecionar depois
-      // window.location.href = '../proxima_pagina.html';
+      window.location.href = '../pagina_redefinicao/pagina_redefinicao.html';
       alert("Link de verificação enviado!");
       popup.classList.remove('show');
     });

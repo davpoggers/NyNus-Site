@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Allerta&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #240b22 !important;
+  font-family: "Allerta", sans-serif;
+  color: #efefef;
+  overflow-x: hidden;
+}
+
+/* Navbar Principal */
+.barra-superior {
+  background-color: #240b22; 
+  padding: 15px 0;
+  border-bottom: 1px solid #160715;
+}
+
+.container-busca {
+  position: relative;
+  width: 50%;
+  max-width: 600px;
+}
+
+.input-busca {
+  background-color: #dfc0ed; 
+  border: none;
+  border-radius: 50px; 
+  height: 35px;
+  padding-right: 40px; 
+}
+
+/* --- Ajuste do ícone de busca (Imagem) --- */
+.img-icone-busca {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 18px; 
+  width: auto;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+/* --- Ajuste dos Ícones do Header (Imagens) --- */
+.grupo-icones img {
+  height: 28px; 
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.grupo-icones img:hover {
+  transform: scale(1.1); 
+  filter: brightness(1.2);
+}
+
+/* --- Sub Menu (Menu e Assistencia) --- */
+.sub-menu {
+  background-color: #3a1437; 
+  height: 50px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+/* Ícones do Sub Menu */
+.icone-nav-pequeno {
+  height: 26px;
+  width: auto;
+}
+
+.cursor-clicavel {
+  cursor: pointer;
+}
+
+/* --- Layout Categorias --- */
+.titulo-categoria {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.card-categoria {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.card-categoria img {
+  width: 100%;
+  height: auto;
+  display: block;
+  min-height: 80px; 
+  object-fit: cover;
+}
+
+.legenda-cat {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(20, 20, 20, 0.7);
+  color: #efefef;
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 4px 0;
+}
+
+.mais-categorias {
+  color: #ccc;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.mais-categorias:hover {
+  color: white;
+}
+
+/* --- Seção de Carrossel de Produtos --- */
+.secao-carrossel h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+.seta-nav {
+  font-size: 2.5rem;
+  color: #efefef;
+  background-color: #1f0828;
+  height: 180px;
+  /* Centraliza o simbolo verticalmente na div da seta */
+  display: flex;
+  align-items: center; 
+  cursor: pointer;
+  padding: 0 10px;
+  user-select: none;
+}
+
+.seta-nav:hover {
+  color: #E0B0FF;
+}
+
+/* Card do Produto */
+.card-produto {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.placeholder-img-prod {
+  height: 140px;
+  background-color: #1f0828; 
+  width: 100%;
+}
+
+.rodape-prod {
+  background-color: #2f0f3c; 
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+}
+
+.rodape-prod span {
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.rodape-prod .preco {
+  font-weight: bold;
+  color: white;
+  margin-top: 2px;
+}

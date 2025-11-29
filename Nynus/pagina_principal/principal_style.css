@@ -54,6 +54,11 @@ body {
   transition: transform 0.2s;
 }
 
+.grupo-icones img[alt="Pedidos"] {
+  position: relative;
+  top: 2.5px;
+}
+
 .grupo-icones img:hover {
   transform: scale(1.1); 
   filter: brightness(1.2);
@@ -125,7 +130,8 @@ body {
 .secao-carrossel h3 {
   font-size: 1.5rem;
   font-weight: 400;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  margin-top: 75px;
   margin-left: 10px;
   text-transform: uppercase;
 }
@@ -135,7 +141,6 @@ body {
   color: #efefef;
   background-color: #1f0828;
   height: 180px;
-  /* Centraliza o simbolo verticalmente na div da seta */
   display: flex;
   align-items: center; 
   cursor: pointer;
@@ -149,7 +154,7 @@ body {
 
 /* Card do Produto */
 .card-produto {
-  width: 220px;
+  width: 23.8%;
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -180,4 +185,23 @@ body {
   font-weight: bold;
   color: white;
   margin-top: 2px;
+}
+
+/* Footer */
+footer {
+  background-color: #3a1437;
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 75px;
+}
+
+#footer_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+#footer_content p {
+  margin-bottom: 0;
 }

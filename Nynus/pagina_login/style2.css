@@ -7,9 +7,9 @@ input::webkit-password-toggle-button {
 
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html, body {
@@ -31,7 +31,8 @@ html, body {
 }
 
 .tela-login {
-  width: 360px;
+  width: 380px;
+  height: 600px;
   min-height: 520px;
   border-radius: 40px;
   background-color: #811b77;
@@ -45,9 +46,8 @@ html, body {
 }
 
 .logo-nynus {
-  width: 250px;
+  width: 240px;
   height: auto;
-  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -136,6 +136,7 @@ html, body {
   transition: all 0.3s ease;
   cursor: pointer;
   margin-top: 10px;
+  margin-bottom: 15px;
   font-family: "Allerta", Courier, monospace;
 }
 

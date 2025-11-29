@@ -21,3 +21,8 @@
 ### 💜 Sobre o projeto
 **NyNus** é uma loja fictícia de roupas que tenta unir uma estética retrô com elementos modernos.  
 O projeto busca explorar desenvolvimento front-end e back-end.
+
+---
+
+### 💻 Visite no GitHub Pages
+https://davpoggers.github.io/NyNus-Site/pagina_login/teste.html

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/davpoggers/NyNus-Site/blob/main/Nynus/img/NyNus_Logo.png">
+  <img src="https://github.com/davpoggers/NyNus-Site/blob/main/Nynus/img/NyNus_Logo.png" width="300px" alt="Nynus Logo">
 </p>
 
 <h1 align="center">NyNus — Loja de Roupas Fictícia</h1>

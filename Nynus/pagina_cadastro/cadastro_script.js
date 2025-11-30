@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const popup = document.getElementById("popup");
-  const prosseguirBtn = document.getElementById("prosseguir");
+  const prosseguirBtn = document.getElementById("prosseguirBtn");
   const criarConta = document.getElementById("criarConta");
 
   document.getElementById("form-cadastro").addEventListener("submit", (e) => {
@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   prosseguirBtn.addEventListener("click", () => {
-    popup.classList.remove("show");
-    document.body.style.overflow = "";
+    window.location.href = "../pagina_principal/pagina_principal.html";
   });
 });

@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nynus - Produto</title>
-    <link rel="icon" type="image/png" href="../img/icons/site_icon.png"/>
+    <link rel="icon" type="image/png" href="../img/icons/site_icon.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link href="produto_style.css" rel="stylesheet"/>
+    <link href="produto_style.css" rel="stylesheet" />
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="../pasta/javascript.js"></script>
 </head>
+
 <body>
-    
+
     <!-- Nav Superior -->
     <nav class="barra-superior d-flex align-items-center justify-content-between px-4">
         <div class="container-logo">
-            <img src="../img/NyNus_Logo.png" alt="NyNus" height="50" 
-                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+            <img src="../img/NyNus_Logo.png" alt="NyNus" height="50"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
         </div>
 
         <div class="container-busca d-none d-md-flex align-items-center">
-            <input type="text" class="form-control input-busca" placeholder="">
+            <input type="text" id="searchInput" class="form-control input-busca" placeholder="">
             <img src="../img/icons/search_icon.svg" class="img-icone-busca" alt="Buscar">
         </div>
 
@@ -40,7 +43,7 @@
     <!-- Contâiner Principal -->
     <div class="container-principal container-fluid">
         <div class="container-hero row">
-            
+
             <!-- Carrossel Produto -->
             <div class="carrossel-produto col-12 col-md-6 mb-4">
                 <div class="imagem-destaque">
@@ -50,18 +53,18 @@
                 </div>
 
                 <div class="review-area d-flex align-items-center justify-content-between mt-3">
-                <div class="nota-estrelas d-flex align-items-center gap-2">
-                    <span class="nota">0.0</span>
-                    <div class="estrelinhas">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
+                    <div class="nota-estrelas d-flex align-items-center gap-2">
+                        <span class="nota">0.0</span>
+                        <div class="estrelinhas">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <span class="reviews">5</span>
                     </div>
-                    <span class="reviews">5</span>
-                </div>
-                <i class="bi bi-heart favoritar"></i>
+                    <i class="bi bi-heart favoritar"></i>
                 </div>
             </div>
 
@@ -92,9 +95,9 @@
             <p class="descricao-detalhada">Descrição detalhada sobre o produto.</p>
 
             <h3 class="titulo-secao">Características gerais</h3>
-    
+
             <div class="container-caracteristicas">
-        
+
                 <div class="card-caracteristica">
                     <p>• Tabela referente a alguma característica do produto</p>
                     <div class="placeholder-tabela"></div>
@@ -104,12 +107,12 @@
                     <p>• Tabela referente a alguma característica do produto 2</p>
                     <div class="placeholder-tabela"></div>
                 </div>
-        
+
             </div>
         </div>
 
         <!-- Contâiner Avaliações -->
-         <div class="container-avaliacoes">
+        <div class="container-avaliacoes">
             <h3 class="titulo-secao">Avaliações do produto</h3>
 
             <div class="header-avaliacoes">
@@ -141,7 +144,9 @@
                             </div>
                         </div>
                     </div>
-                    <p class="avaliacao-texto">"O QUÊ?!?! ESSE [[GRANDE SHOT]] DE BARGANHA ESTÁ VENDENDO... ROUPAS?! VAMOS CONFERIR AS AVALIAÇÕES! AJUDE-NOS A VER SE ESSE NEGÓCIO É UM SUCESSO OU UM ERRO DE PROGRAMAÇÃO!"</p>
+                    <p class="avaliacao-texto">"O QUÊ?!?! ESSE [[GRANDE SHOT]] DE BARGANHA ESTÁ VENDENDO... ROUPAS?!
+                        VAMOS CONFERIR AS AVALIAÇÕES! AJUDE-NOS A VER SE ESSE NEGÓCIO É UM SUCESSO OU UM ERRO DE
+                        PROGRAMAÇÃO!"</p>
                 </div>
 
                 <div class="avaliacao-item">
@@ -160,7 +165,8 @@
                             </div>
                         </div>
                     </div>
-                    <p class="avaliacao-texto">"👌︎☜︎💣︎ 💣︎✌︎☠︎☜︎✋︎☼︎✌︎ ☜︎💧︎💧︎✌︎ ☹︎⚐︎☺︎✌︎ ☜︎💣︎ 🏱︎☜︎💧︎💧︎⚐︎✌︎☹︎ 🏱︎✌︎☼︎✌︎👌︎☜︎☠︎💧︎ ☜︎💣︎📬︎"</p>
+                    <p class="avaliacao-texto">"👌︎☜︎💣︎ 💣︎✌︎☠︎☜︎✋︎☼︎✌︎ ☜︎💧︎💧︎✌︎ ☹︎⚐︎☺︎✌︎ ☜︎💣︎ 🏱︎☜︎💧︎💧︎⚐︎✌︎☹︎
+                        🏱︎✌︎☼︎✌︎👌︎☜︎☠︎💧︎ ☜︎💣︎📬︎"</p>
                 </div>
 
                 <div class="avaliacao-item">
@@ -179,40 +185,41 @@
                             </div>
                         </div>
                     </div>
-                    <p class="avaliacao-texto">"Haha, what an amazing store!! I'm going to buy lots of little gifts for my dear Lule 😍🥰"</p>
+                    <p class="avaliacao-texto">"Haha, what an amazing store!! I'm going to buy lots of little gifts for
+                        my dear Lule 😍🥰"</p>
                 </div>
 
             </div>
 
-         </div>
+        </div>
 
-         <!-- Contâiner Produtos Semelhantes -->
-          <div class="container-semelhantes">
+        <!-- Contâiner Produtos Semelhantes -->
+        <div class="container-semelhantes">
             <h3 class="titulo-secao">Produtos Semelhantes</h3>
 
             <div class="carrossel-semelhantes">
                 <span class="seta-semelhantes esq">&lt;</span>
 
                 <div class="container-cards">
-                    <div class="card-semelhante">
+                    <div class="card-semelhante" onclick="window.location.href='pagina_produto.html'">
                         <div class="img-placeholder-card"></div>
                         <p class="nome-card">Nome do Produto</p>
                         <p class="preco-card">R$ 00,00</p>
                     </div>
 
-                    <div class="card-semelhante">
+                    <div class="card-semelhante" onclick="window.location.href='pagina_produto.html'">
                         <div class="img-placeholder-card"></div>
                         <p class="nome-card">Nome do Produto</p>
                         <p class="preco-card">R$ 00,00</p>
                     </div>
 
-                    <div class="card-semelhante">
+                    <div class="card-semelhante" onclick="window.location.href='pagina_produto.html'">
                         <div class="img-placeholder-card"></div>
                         <p class="nome-card">Nome do Produto</p>
                         <p class="preco-card">R$ 00,00</p>
                     </div>
 
-                    <div class="card-semelhante">
+                    <div class="card-semelhante" onclick="window.location.href='pagina_produto.html'">
                         <div class="img-placeholder-card"></div>
                         <p class="nome-card">Nome do Produto</p>
                         <p class="preco-card">R$ 00,00</p>
@@ -223,26 +230,27 @@
                 <span class="seta-semelhantes dir">&gt;</span>
             </div>
 
-          </div>
+        </div>
 
     </div>
 
     <!-- Footer -->
     <footer>
         <div id="footer_content">
-        <div id="footer_reservado">
-            <p>Todos os direitos reservados © 2025 | Nynus</p>
-        </div>
-            
-        <div id="footer_logo">
-            <img src="../img/NyNus_Logo.png" alt="NyNus_Logo" height="60px">
-        </div>
-            
-        <div id="footer_criadores">
-            <p>Criado por Davi M. e Leonardo R.</p>
-        </div>
-        
+            <div id="footer_reservado">
+                <p>Todos os direitos reservados © 2025 | NyNus</p>
+            </div>
+
+            <div id="footer_logo">
+                <img src="../img/NyNus_Logo.png" alt="NyNus_Logo" height="60px">
+            </div>
+
+            <div id="footer_criadores">
+                <p>Criado por Davi M. e Leonardo R.</p>
+            </div>
+
         </div>
     </footer>
 </body>
+
 </html>

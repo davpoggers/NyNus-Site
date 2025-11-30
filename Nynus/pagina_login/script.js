@@ -7,6 +7,7 @@ function login() {
 
   if (emailUser === emailVerif && senhaUser === senhaVerif) {
     alert("Login efetuado com sucesso!");
+    window.location.href = '../pagina_principal/pagina_principal.html';
   } else {
     alert("Email ou senha inválido(s)!");
   }
@@ -25,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     mostrando = !mostrando;
     senhaInput.type = mostrando ? "text" : "password";
     toggleSenha.src = mostrando
-      ? "../img/icons/eye-slash.svg" 
+      ? "../img/icons/eye-slash.svg"
       : "../img/icons/eye.svg";
   });
 });

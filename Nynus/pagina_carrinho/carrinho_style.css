@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Allerta&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #240b22 !important;
+  font-family: "Allerta", sans-serif;
+  color: #efefef;
+  overflow-x: hidden;
+}
+
+/* ==================== NAVBAR ==================== */
+
+/* Navbar Principal */
+.barra-superior {
+  background-color: #240b22;
+  padding: 15px 0;
+  border-bottom: 1px solid #160715;
+}
+
+.container-busca {
+  position: relative;
+  width: 50%;
+  max-width: 600px;
+}
+
+.input-busca {
+  background-color: #dfc0ed;
+  border: none;
+  border-radius: 50px;
+  height: 35px;
+  padding-right: 40px;
+}
+
+.img-icone-busca {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 18px;
+  width: auto;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.grupo-icones img {
+  height: 28px;
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.grupo-icones img[alt="Pedidos"] {
+  position: relative;
+  top: 2.5px;
+}
+
+.grupo-icones img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+/* Sub Menu */
+.sub-menu {
+  background-color: #3a1437;
+  height: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.icone-nav-pequeno {
+  height: 26px;
+  width: auto;
+}
+
+.cursor-clicavel {
+  cursor: pointer;
+}
+
+/* ==================== CARRINHO ==================== */
+
+.container-carrinho {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.titulo-carrinho {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #efefef;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+
+/* Lista de Produtos */
+.lista-produtos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item-carrinho {
+  background-color: #2b0d28;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: background-color 0.3s;
+}
+
+.item-carrinho:hover {
+  background-color: #341032;
+}
+
+.imagem-produto {
+  width: 150px;
+  height: 120px;
+  background-color: #1a0518;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.info-produto {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nome-produto {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.unidades-produto,
+.valor-produto {
+  font-size: 1rem;
+  color: #d0d0d0;
+}
+
+.acoes-produto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-right: 10px;
+}
+
+.icone-acao {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: filter 0.2s, transform 0.2s;
+  filter: brightness(0) saturate(100%) invert(80%) sepia(15%) saturate(500%) hue-rotate(230deg) brightness(95%) contrast(90%);
+}
+
+.icone-acao:hover {
+  filter: brightness(0) saturate(100%) invert(90%) sepia(10%) saturate(300%) hue-rotate(220deg) brightness(105%) contrast(95%);
+  transform: scale(1.15);
+}
+
+/* Total do Carrinho */
+.total-carrinho {
+  background-color: transparent;
+  padding: 20px 0;
+  text-align: right;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* ==================== PAINEL DIREITO ==================== */
+
+.painel-direito {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Botões de Pagamento */
+.btn-pagamento {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 15px;
+  font-family: "Allerta", sans-serif;
+}
+
+.btn-realizar {
+  background-color: #7b4d99;
+  color: #fff;
+}
+
+.btn-realizar:hover {
+  background-color: #8f5db0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(123, 77, 153, 0.4);
+}
+
+.btn-alterar {
+  background-color: #4a2557;
+  color: #fff;
+}
+
+.btn-alterar:hover {
+  background-color: #5a2f67;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(74, 37, 87, 0.4);
+}
+
+/* Seção de Cupom */
+.secao-cupom {
+  margin-top: 30px;
+}
+
+.label-cupom {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.input-cupom {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: #dfc0ed;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: "Allerta", sans-serif;
+  color: #240b22;
+}
+
+.input-cupom::placeholder {
+  color: #8a7296;
+}
+
+.input-cupom:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(223, 192, 237, 0.3);
+}
+
+/* Meus Cupons */
+.meus-cupons {
+  margin-top: 30px;
+  background-color: #2b0d28;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.titulo-meus-cupons {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.cupom-item {
+  background-color: #1a0518;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.cupom-titulo {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.cupom-descricao {
+  font-size: 0.95rem;
+  color: #c0a0d0;
+  line-height: 1.4;
+}
+
+/* ==================== FOOTER ==================== */
+
+footer {
+  background-color: #3a1437;
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 100px;
+}
+
+#footer_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+#footer_content p {
+  margin-bottom: 0;
+}
+
+/* ==================== RESPONSIVO ==================== */
+
+@media (max-width: 991px) {
+  .item-carrinho {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .imagem-produto {
+    width: 100%;
+    height: 180px;
+  }
+
+  .acoes-produto {
+    flex-direction: row;
+    align-self: flex-end;
+  }
+
+  .titulo-carrinho {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .titulo-carrinho {
+    font-size: 1.5rem;
+  }
+
+  .btn-pagamento {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}

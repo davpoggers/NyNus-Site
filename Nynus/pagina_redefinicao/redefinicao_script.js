@@ -19,3 +19,23 @@ document.addEventListener("DOMContentLoaded", () => {
   setupPasswordToggle("novaSenha", "toggleNova");
   setupPasswordToggle("repitaSenha", "toggleRepita");
 });
+
+const popup = document.getElementById("popup");
+const prosseguirBtn = document.getElementById("prosseguirBtn");
+
+document.getElementById("form-redefinicao").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const novaSenha = document.getElementById("novaSenha").value;
+  const repitaSenha = document.getElementById("repitaSenha").value;
+
+  if (novaSenha !== repitaSenha) {
+    alert("As senhas não coincidem!");
+    return;
+  }
+  popup.classList.add("show");
+  document.body.style.overflow = "hidden";
+});
+
+prosseguirBtn.addEventListener("click", () => {
+  window.location.href = "../pagina_login/pagina_login.html";
+});

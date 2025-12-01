@@ -7,7 +7,8 @@
   font-family: "Allerta", sans-serif;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   display: flex;
@@ -33,7 +34,7 @@ html, body {
 .titulo {
   color: #efefef;
   font-size: 36px;
-  text-allign: center;
+  text-align: center;
   margin-bottom: 35px;
   text-shadow: 0 6px 5px rgba(0, 0, 0, 0.5);
   -webkit-text-stroke-width: 0.1px;
@@ -97,4 +98,70 @@ html, body {
 
 #btn-confirmar:hover {
   background-color: #65317a;
+}
+
+.success-icon {
+  width: 55%;
+  margin-bottom: 20px;
+}
+
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  font-family: "Allerta", sans-serif;
+}
+
+.popup-overlay.show {
+  display: flex;
+}
+
+.popup-box {
+  background-color: #811b77;
+  border: 4px solid #56007e;
+  border-radius: 20px;
+  padding: 40px 50px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+  width: 90%;
+}
+
+.popup-box p {
+  font-size: 28px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.4;
+  margin-bottom: 25px;
+}
+
+.popup-button {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.popup-button button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.4);
+  transition: 0.2s;
+}
+
+#prosseguirBtn {
+  background-color: #8549a1;
+  color: #fff;
+  border: solid 2px #37004d;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#prosseguirBtn:hover {
+  background-color: #7d3f91;
 }

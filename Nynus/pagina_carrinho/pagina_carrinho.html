@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NyNus - Carrinho</title>
+  <link rel="icon" type="image/png" href="../img/icons/site_icon.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="carrinho_style.css" rel="stylesheet" />
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="../pasta/javascript.js"></script>
+  </div>
+
+  <!-- Nav Superior -->
+  <nav class="barra-superior d-flex align-items-center justify-content-between px-4">
+    <div class="container-logo">
+      <a href="../pagina_principal/pagina_principal.html">
+        <img src="../img/NyNus_Logo.png" alt="NyNus" height="50"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+      </a>
+    </div>
+
+    <div class="container-busca d-none d-md-flex align-items-center">
+      <input type="text" id="searchInput" class="form-control input-busca" placeholder="">
+      <img src="../img/icons/search_icon.svg" class="img-icone-busca" alt="Buscar">
+    </div>
+
+    <div class="d-flex gap-4 grupo-icones align-items-center">
+      <img src="../img/icons/pedidos_icon.svg" alt="Pedidos" title="Pedidos">
+      <a href="../pagina_carrinho/pagina_carrinho.html">
+        <img src="../img/icons/compras_icon.svg" alt="Sacola" title="Sacola">
+      </a>
+      <img src="../img/icons/profile_icon.svg" alt="Perfil" title="Perfil">
+    </div>
+  </nav>
+
+  <!-- Sub Menu -->
+  <div class="sub-menu px-3 d-flex align-items-center gap-3">
+    <img src="../img/icons/sidebar.svg" class="cursor-clicavel icone-nav-pequeno" alt="Menu">
+    <img src="../img/icons/assistencia_icon.svg" class="cursor-clicavel icone-nav-pequeno" alt="Ajuda">
+  </div>
+
+  <!-- Container do Carrinho -->
+  <div class="container container-carrinho mt-5">
+    <h1 class="titulo-carrinho">MEU CARRINHO</h1>
+
+    <div class="row mt-4 g-4">
+      <!-- Coluna Esquerda - Produtos -->
+      <div class="col-lg-7">
+        <div class="lista-produtos">
+
+          <!-- Item do Produto 1 -->
+          <div class="item-carrinho">
+            <div class="imagem-produto"></div>
+            <div class="info-produto">
+              <div class="nome-produto">Nome do Produto</div>
+              <div class="unidades-produto">Unidades: 0</div>
+              <div class="valor-produto">Valor: R$ 00,00</div>
+            </div>
+            <div class="acoes-produto">
+              <img src="../img/icons/delete_icon.svg" class="icone-acao" alt="Excluir">
+              <img src="../img/icons/edit_icon.svg" class="icone-acao" alt="Editar">
+            </div>
+          </div>
+
+          <!-- Item do Produto 2 -->
+          <div class="item-carrinho">
+            <div class="imagem-produto"></div>
+            <div class="info-produto">
+              <div class="nome-produto">Nome do Produto</div>
+              <div class="unidades-produto">Unidades: 0</div>
+              <div class="valor-produto">Valor: R$ 00,00</div>
+            </div>
+            <div class="acoes-produto">
+              <img src="../img/icons/delete_icon.svg" class="icone-acao" alt="Excluir">
+              <img src="../img/icons/edit_icon.svg" class="icone-acao" alt="Editar">
+            </div>
+          </div>
+
+          <!-- Total -->
+          <div class="total-carrinho">
+            <span>Total: R$ 00,00</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Coluna Direita - Pagamento e Cupons -->
+      <div class="col-lg-5">
+        <div class="painel-direito">
+
+          <!-- Botões de Pagamento -->
+          <button class="btn-pagamento btn-realizar">Realizar pagamento</button>
+          <button class="btn-pagamento btn-alterar">Alterar método de pagamento</button>
+
+          <!-- Campo de Cupom -->
+          <div class="secao-cupom mt-4">
+            <label class="label-cupom">Código de cupom:</label>
+            <input type="text" class="input-cupom" placeholder="">
+          </div>
+
+          <!-- Meus Cupons -->
+          <div class="meus-cupons mt-4">
+            <div class="titulo-meus-cupons">Meus cupons:</div>
+            <div class="cupom-item">
+              <div class="cupom-titulo">Cupom 1</div>
+              <div class="cupom-descricao">Frete grátis em compras de até R$ 00,00</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </body>
+
+</html>

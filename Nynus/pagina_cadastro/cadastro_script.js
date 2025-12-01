@@ -36,6 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   prosseguirBtn.addEventListener("click", () => {
-    window.location.href = "../pagina_principal/pagina_principal.html";
+    window.location.href = "../pagina_login/pagina_login.html";
   });
 });

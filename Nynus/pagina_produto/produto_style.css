@@ -15,7 +15,7 @@ body {
 
 /* -- Navbar Principal -- */
 .barra-superior {
-  background-color: #240b22; 
+  background-color: #240b22;
   padding: 15px 0;
   border-bottom: 1px solid #160715;
 }
@@ -27,11 +27,11 @@ body {
 }
 
 .input-busca {
-  background-color: #dfc0ed; 
+  background-color: #dfc0ed;
   border: none;
-  border-radius: 50px; 
+  border-radius: 50px;
   height: 35px;
-  padding-right: 40px; 
+  padding-right: 40px;
 }
 
 /* -- Ajuste do ícone de busca (Imagem) -- */
@@ -40,7 +40,7 @@ body {
   right: 15px;
   top: 50%;
   transform: translateY(-50%);
-  height: 18px; 
+  height: 18px;
   width: auto;
   pointer-events: none;
   opacity: 0.7;
@@ -48,7 +48,7 @@ body {
 
 /* -- Ajuste dos Ícones do Header (Imagens) -- */
 .grupo-icones img {
-  height: 28px; 
+  height: 28px;
   width: auto;
   cursor: pointer;
   transition: transform 0.2s;
@@ -60,15 +60,15 @@ body {
 }
 
 .grupo-icones img:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
   filter: brightness(1.2);
 }
 
 /* -- Sub Menu (Menu e Assistência) -- */
 .sub-menu {
-  background-color: #3a1437; 
+  background-color: #3a1437;
   height: 50px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* -- Ícones do Sub Menu -- */
@@ -84,29 +84,29 @@ body {
 
 /* -- Conteúdo Principal -- */
 .container-principal {
-    padding: 0 50px;
+  padding: 0 50px;
 }
 
 /* -- Conteúdo Hero -- */
 
 /* -- Container Esquerdo -- */
 .container-hero {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 .carrossel-produto {
-    min-width: 0;
+  min-width: 0;
 }
 
 .imagem-destaque {
-    position: relative;
-    background-color: #200829;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10px;
-    border-radius: 10px;
+  position: relative;
+  background-color: #200829;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  border-radius: 10px;
 }
 
 .placeholder-imagem {
@@ -116,10 +116,10 @@ body {
 }
 
 .seta-galeria {
-    font-size: 24px;
-    cursor: pointer;
-    color: #efefef;
-    opacity: 0.7;
+  font-size: 24px;
+  cursor: pointer;
+  color: #efefef;
+  opacity: 0.7;
 }
 
 .review-area {
@@ -147,185 +147,202 @@ body {
 
 /* -- Container Direito -- */
 .detalhes-produto {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 0;
 }
 
 .detalhes-produto h2 {
-    font-size: 2.5em;
-    margin-bottom: 0;
-    padding-top: 0;
+  font-size: 2.5em;
+  margin-bottom: 0;
+  padding-top: 0;
 }
 
 .detalhes-produto p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .preco {
-    font-size: 3em;
-    font-weight: bold;
-    margin-top: 15px;
-    margin-bottom: 25px !important;
-    display: inline-block;
-    position: relative;
-    transition: transform 0.05s linear;
-    z-index: 9999;
-    white-space: nowrap;
+  font-size: 3em;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 25px !important;
+  display: inline-block;
+  position: relative;
+  transition: transform 0.05s linear;
+  z-index: 9999;
+  white-space: nowrap;
 }
 
 /* -- Estilo dos Botões -- */
 .btn-comprar {
-    background-color: #9d50b4;
-    border: none;
-    color: white;
-    padding: 12px 20px;
-    font-size: 1.2em;
-    border-radius: 5px;
-    transition: background-color 0.2s;
+  background-color: #9d50b4;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: background-color 0.2s;
 }
 
 .btn-comprar:hover {
-    background-color: #8c45a4;
+  background-color: #8c45a4;
 }
 
 .btn-carrinho {
-    background-color: #551a8b;
-    border: none;
-    color: white;
-    padding: 12px 20px;
-    font-size: 1.2em;
-    border-radius: 5px;
-    transition: background-color 0.2s;
+  background-color: #551a8b;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: background-color 0.2s;
 }
 
+.btn-voltar {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.icone-voltar {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icone-voltar:hover {
+  transform: scale(1.1);
+}
+
+
 .btn-carrinho:hover {
-    background-color: #4a157a;
+  background-color: #4a157a;
 }
 
 /* Informações do Produto */
 .informacoes-produto {
-    border: 4px solid #360a31;
-    padding: 15px; 
-    margin-top: 25px;
-    margin-bottom: 75px;
+  border: 4px solid #360a31;
+  padding: 15px;
+  margin-top: 25px;
+  margin-bottom: 75px;
 }
 
 .info-inline {
-    display: flex; 
-    justify-content: space-between; 
-    padding: 0;
-    margin: 0;
-    flex-wrap: nowrap; 
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  flex-wrap: nowrap;
 }
 
 .info-inline li {
-    list-style: none;   
-    flex: 1;  
-    text-align: center;  
-    padding: 0 5px;
-    font-size: 20px;
+  list-style: none;
+  flex: 1;
+  text-align: center;
+  padding: 0 5px;
+  font-size: 20px;
 }
 
 .informacoes-produto .destaque {
-    color: #dfc0ed; 
-    font-weight: 800;
+  color: #dfc0ed;
+  font-weight: 800;
 }
 
 /* -- Container Detalhes -- */
 .container-detalhes {
-    padding: 0 50px; 
-    margin-top: 80px; 
+  padding: 0 50px;
+  margin-top: 80px;
 }
 
 .titulo-secao {
-    font-size: 2em;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    font-weight: bold;
+  font-size: 2em;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .descricao-detalhada {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 /* --- Características Gerais (2 Colunas) --- */
 .container-caracteristicas {
-    display: flex;
-    gap: 40px; 
-    margin-bottom: 80px;
+  display: flex;
+  gap: 40px;
+  margin-bottom: 80px;
 }
 
 .card-caracteristica {
-    flex: 1; 
+  flex: 1;
 }
 
 .placeholder-tabela {
-    background-color: #3a1437; 
-    border: 1px solid #551a8b; 
-    height: 60px; 
-    width: 100%;
-    margin-top: 10px;
+  background-color: #3a1437;
+  border: 1px solid #551a8b;
+  height: 60px;
+  width: 100%;
+  margin-top: 10px;
 }
 
 /* -- Container Avaliação dos Clientes -- */
 .container-avaliacoes {
-    padding: 0 50px;
-    margin-top: 80px;
+  padding: 0 50px;
+  margin-top: 80px;
 }
 
 .container-avaliacoes .titulo-secao {
-    font-size: 2em; 
-    margin-top: 0;
+  font-size: 2em;
+  margin-top: 0;
 }
 
-.header-avaliacoes { 
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 40px;
+.header-avaliacoes {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
 }
 
 .nota-geral {
-    font-size: 3em;
-    font-weight: bold;
+  font-size: 3em;
+  font-weight: bold;
 }
 
 .estrelas-avaliacoes .bi-star-fill {
-    color: #dfc0ed; 
-    font-size: 1.5em;
+  color: #dfc0ed;
+  font-size: 1.5em;
 }
 
 .contagem-avaliacoes {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 /* -- Lista de Avaliações Individuais -- */
 .lista-avaliacoes {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 80px;
 }
 
 .avaliacao-item {
-    border-bottom: 1px solid #360a31; 
-    padding-bottom: 20px;
+  border-bottom: 1px solid #360a31;
+  padding-bottom: 20px;
 }
 
 .user-info {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .user-foto {
-    background-color: #dfc0ed; 
-    width: 50px;
-    height: 50px;
-    border-radius: 50%; 
-    margin-right: 15px;
+  background-color: #dfc0ed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
 }
 
 .user-foto img {
@@ -336,120 +353,124 @@ body {
 }
 
 .user-nome {
-    font-weight: bold;
-    margin: 0;
+  font-weight: bold;
+  margin: 0;
 }
 
-.user-estrelas .bi-star-fill, .user-estrelas .bi-star {
-    color: #dfc0ed;
-    font-size: 1em;
+.user-estrelas .bi-star-fill,
+.user-estrelas .bi-star {
+  color: #dfc0ed;
+  font-size: 1em;
 }
 
 .avaliacao-texto {
-    padding-left: 55px; 
-    opacity: 0.9;
+  padding-left: 55px;
+  opacity: 0.9;
 }
 
 /* -- Container Produtos Semelhantes  -- */
 .container-semelhantes {
-    padding: 0 50px;
-    margin-top: 80px; 
-    margin-bottom: 80px;
+  padding: 0 50px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .container-semelhantes .titulo-secao {
-    font-size: 1.5em; 
-    font-weight: bold;
-    margin-top: 0; 
-    margin-bottom: 25px;
-    margin-left: 10px;
-    text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  text-transform: uppercase;
 }
 
 .carrossel-semelhantes {
-    display: flex;
-    align-items: center;
-    gap: 20px; 
-    position: relative;
-    
-    margin-left: -50px; 
-    margin-right: -50px;
-    padding: 0 50px; 
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+
+  margin-left: -50px;
+  margin-right: -50px;
+  padding: 0 50px;
 }
 
 .seta-semelhantes {
-    flex-shrink: 0; 
-    font-size: 2.5rem;
-    color: #efefef;
-    background-color: #1f0828;
-    height: 180px;
-    display: flex;
-    align-items: center; 
-    cursor: pointer;
-    padding: 0 10px;
-    user-select: none;
-    position: relative; 
-    z-index: 10;
+  flex-shrink: 0;
+  font-size: 2.5rem;
+  color: #efefef;
+  background-color: #1f0828;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 10px;
+  user-select: none;
+  position: relative;
+  z-index: 10;
 }
 
 .seta-semelhantes:hover {
-    color: #E0B0FF;
+  color: #E0B0FF;
 }
 
 /* -- Containers dos Cards -- */
 .container-cards {
-    display: flex;
-    gap: 20px;
-    width: 100%; 
-    
-    /* Configuração de Carrossel Horizontal */
-    overflow-x: scroll; 
-    padding: 8px 1px; 
-    
-    /* Esconde a barra de rolagem */
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+  display: flex;
+  gap: 20px;
+  width: 100%;
+
+  /* Configuração de Carrossel Horizontal */
+  overflow-x: scroll;
+  padding: 8px 1px;
+
+  /* Esconde a barra de rolagem */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .container-cards::-webkit-scrollbar {
-    display: none; /* Chrome, Safari and Opera */
+  display: none;
+  /* Chrome, Safari and Opera */
 }
 
 
 /* -- Card Individual -- */
 .card-semelhante {
-    width: 23.8%; 
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
+  width: 23.8%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
 }
 
 .img-placeholder-card {
-    height: 140px;
-    background-color: #1f0828; 
-    width: 100%;
+  height: 140px;
+  background-color: #1f0828;
+  width: 100%;
 }
 
 .card-semelhante {
-    background-color: #2f0f3c;
-    padding-bottom: 10px;
+  background-color: #2f0f3c;
+  padding-bottom: 10px;
 }
 
 .card-semelhante .nome-card {
-    font-size: 0.9rem;
-    color: #ddd;
-    text-align: center;
-    padding: 10px;
-    margin: 0;
+  font-size: 0.9rem;
+  color: #ddd;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
 }
 
 .card-semelhante .preco-card {
-    font-weight: bold;
-    color: white;
-    font-size: 0.9rem;
-    text-align: center;
-    margin-top: 2px;
-    margin-bottom: 0;
+  font-weight: bold;
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 0;
 }
 
 
@@ -558,13 +579,13 @@ footer {
 
 #spamton {
   position: absolute;
-  top: 35%; 
+  top: 35%;
   right: -200px;
   width: 150px;
   height: auto;
   z-index: 999999999;
   opacity: 0;
-  transition: opacity 0.3s ease; 
+  transition: opacity 0.3s ease;
 }
 
 /* -- Duração da Animação -- */
@@ -576,15 +597,35 @@ footer {
 /* -- Movimento do Spamton -- */
 @keyframes spamtonRun {
 
-  0% { transform: translateX(0); }
+  0% {
+    transform: translateX(0);
+  }
 
-  26% { transform: translateX(-50vw); } /* Ponto de parada sobre o preço (3000ms) */
-  
-  43.5% { transform: translateX(-50vw); } /* Fim da pausa visual (5000ms) */
+  26% {
+    transform: translateX(-50vw);
+  }
 
-  60.8% { transform: translateX(-70vw); } /* Ponto de parada para risada (7000ms) */
-  
-  78.3% { transform: translateX(-70vw); } /* Fim da risada (9000ms) */
+  /* Ponto de parada sobre o preço (3000ms) */
 
-  100% { transform: translateX(-150vw); } 
+  43.5% {
+    transform: translateX(-50vw);
+  }
+
+  /* Fim da pausa visual (5000ms) */
+
+  60.8% {
+    transform: translateX(-70vw);
+  }
+
+  /* Ponto de parada para risada (7000ms) */
+
+  78.3% {
+    transform: translateX(-70vw);
+  }
+
+  /* Fim da risada (9000ms) */
+
+  100% {
+    transform: translateX(-150vw);
+  }
 }

@@ -10,7 +10,7 @@ body {
   background-color: #240b22 !important;
   font-family: "Allerta", sans-serif;
   color: #efefef;
-  overflow-x: hidden;
+  overflow-x: visible !important;
 }
 
 /* -- Navbar Principal -- */
@@ -168,6 +168,9 @@ body {
     font-weight: bold;
     margin-top: 15px;
     margin-bottom: 25px !important;
+    display: inline-block;
+    position: relative;
+    z-index: 9999;
 }
 
 /* -- Estilo dos Botões -- */
@@ -465,4 +468,129 @@ footer {
 
 #footer_content p {
   margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Spamton escondido fora da tela */
+.spamton {
+    position: fixed;
+    bottom: 40px;
+    right: -200px; /* começa fora da tela */
+    width: 150px;
+    opacity: 0;
+    z-index: 999999;
+    pointer-events: none;
+}
+
+/* Spamton entrando e atravessando a tela */
+.spamton-active {
+    opacity: 1;
+    animation: spamton-run 4s linear forwards;
+}
+
+@keyframes spamton-run {
+    0% { right: -200px; transform: scaleX(1); }
+    50% { right: 50vw; }
+    100% { right: 120vw; }
+}
+
+/* Preço sendo empurrado para a esquerda */
+.preco-pushed {
+    animation: push-left 4s linear forwards, glitch 0.1s infinite;
+}
+
+@keyframes push-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-500px); }
+}
+
+/* Efeito glitch */
+@keyframes glitch {
+    0% { letter-spacing: 0px; }
+    50% { letter-spacing: 3px; }
+    100% { letter-spacing: -2px; }
 }

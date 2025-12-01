@@ -1,4 +1,4 @@
-<p align="center">
+8<p align="center">
   <img src="https://github.com/davpoggers/NyNus-Site/blob/main/Nynus/img/NyNus_Logo.png" width="300px" alt="Nynus Logo">
 </p>
 
@@ -26,3 +26,5 @@ O projeto busca explorar desenvolvimento front-end e back-end.
 
 ### 💻 Visite no GitHub Pages
 https://davpoggers.github.io/NyNus-Site/Nynus/pagina_login/pagina_login.html
+usuário: teste@gmail.com
+senha: 123Teste

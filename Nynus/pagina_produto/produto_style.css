@@ -553,72 +553,38 @@ footer {
 
 
 
-/* --- ESTILOS DO EASTER EGG DO SPAMTON --- */
+/* --- eu sinto que isso nao era pra estar aqui.... --- */
 
-/* Posiciona o Spamton (sem mudanças drásticas aqui) */
+
 #spamton {
-  position: fixed;
-  top: 45%; 
+  position: absolute;
+  top: 35%; 
   right: -200px;
   width: 150px;
   height: auto;
-  z-index: 10000;
+  z-index: 999999999;
   opacity: 0;
   transition: opacity 0.3s ease; 
 }
 
-/* Duração aumentada para 10s. */
+/* -- Duração da Animação -- */
 #spamton.animate {
   opacity: 1;
-  animation: spamtonRun 10s linear forwards; 
+  animation: spamtonRun 11.5s linear forwards;
 }
 
-/* Keyframes de movimento do Spamton (mantidos do último pedido) */
+/* -- Movimento do Spamton -- */
 @keyframes spamtonRun {
+
   0% { transform: translateX(0); }
-  50% { transform: translateX(-70vw); } /* Chega perto do preço */
-  55% { transform: translateX(-73vw); } 
-  60% { transform: translateX(-70vw); }
+
+  26% { transform: translateX(-50vw); } /* Ponto de parada sobre o preço (3000ms) */
+  
+  43.5% { transform: translateX(-50vw); } /* Fim da pausa visual (5000ms) */
+
+  60.8% { transform: translateX(-70vw); } /* Ponto de parada para risada (7000ms) */
+  
+  78.3% { transform: translateX(-70vw); } /* Fim da risada (9000ms) */
+
   100% { transform: translateX(-150vw); } 
-}
-
-
-/* --- ESTILO PARA O CAOS DE NÚMEROS (STREAM) --- */
-
-/* Container de caos. Agora absoluto dentro de .preco-container */
-#price-chaos-container {
-    position: absolute;
-    top: 0; 
-    left: 0; 
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    pointer-events: none;
-    z-index: 10001; /* Fica acima do preço estático */
-    opacity: 0; /* Começa invisível e o JS o torna visível */
-    transition: opacity 0.2s ease-in;
-}
-
-/* Stream de 9s */
-.chaos-text {
-    position: absolute;
-    right: -50px; /* Começa um pouco fora da tela à direita do container */
-    top: 0;
-    white-space: nowrap;
-    font-size: 3em;
-    font-weight: bold;
-    color: #FF00FF; 
-    animation: nineOverflow 1.5s linear forwards; /* Mais rápido */
-}
-
-/* Keyframes para fazer o stream de 9s passar e sumir pela esquerda */
-@keyframes nineOverflow {
-    0% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    100% {
-        transform: translateX(-100vw); /* Passa por toda a tela e some */
-        opacity: 0;
-    }
 }

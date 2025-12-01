@@ -10,7 +10,7 @@ body {
   background-color: #240b22 !important;
   font-family: "Allerta", sans-serif;
   color: #efefef;
-  overflow-x: visible !important;
+  overflow-x: hidden;
 }
 
 /* -- Navbar Principal -- */
@@ -170,7 +170,9 @@ body {
     margin-bottom: 25px !important;
     display: inline-block;
     position: relative;
+    transition: transform 0.05s linear;
     z-index: 9999;
+    white-space: nowrap;
 }
 
 /* -- Estilo dos Botões -- */
@@ -551,46 +553,72 @@ footer {
 
 
 
+/* --- ESTILOS DO EASTER EGG DO SPAMTON --- */
+
+/* Posiciona o Spamton (sem mudanças drásticas aqui) */
+#spamton {
+  position: fixed;
+  top: 45%; 
+  right: -200px;
+  width: 150px;
+  height: auto;
+  z-index: 10000;
+  opacity: 0;
+  transition: opacity 0.3s ease; 
+}
+
+/* Duração aumentada para 10s. */
+#spamton.animate {
+  opacity: 1;
+  animation: spamtonRun 10s linear forwards; 
+}
+
+/* Keyframes de movimento do Spamton (mantidos do último pedido) */
+@keyframes spamtonRun {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-70vw); } /* Chega perto do preço */
+  55% { transform: translateX(-73vw); } 
+  60% { transform: translateX(-70vw); }
+  100% { transform: translateX(-150vw); } 
+}
 
 
+/* --- ESTILO PARA O CAOS DE NÚMEROS (STREAM) --- */
 
-
-/* Spamton escondido fora da tela */
-.spamton {
-    position: fixed;
-    bottom: 40px;
-    right: -200px; /* começa fora da tela */
-    width: 150px;
-    opacity: 0;
-    z-index: 999999;
+/* Container de caos. Agora absoluto dentro de .preco-container */
+#price-chaos-container {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     pointer-events: none;
+    z-index: 10001; /* Fica acima do preço estático */
+    opacity: 0; /* Começa invisível e o JS o torna visível */
+    transition: opacity 0.2s ease-in;
 }
 
-/* Spamton entrando e atravessando a tela */
-.spamton-active {
-    opacity: 1;
-    animation: spamton-run 4s linear forwards;
+/* Stream de 9s */
+.chaos-text {
+    position: absolute;
+    right: -50px; /* Começa um pouco fora da tela à direita do container */
+    top: 0;
+    white-space: nowrap;
+    font-size: 3em;
+    font-weight: bold;
+    color: #FF00FF; 
+    animation: nineOverflow 1.5s linear forwards; /* Mais rápido */
 }
 
-@keyframes spamton-run {
-    0% { right: -200px; transform: scaleX(1); }
-    50% { right: 50vw; }
-    100% { right: 120vw; }
-}
-
-/* Preço sendo empurrado para a esquerda */
-.preco-pushed {
-    animation: push-left 4s linear forwards, glitch 0.1s infinite;
-}
-
-@keyframes push-left {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-500px); }
-}
-
-/* Efeito glitch */
-@keyframes glitch {
-    0% { letter-spacing: 0px; }
-    50% { letter-spacing: 3px; }
-    100% { letter-spacing: -2px; }
+/* Keyframes para fazer o stream de 9s passar e sumir pela esquerda */
+@keyframes nineOverflow {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100vw); /* Passa por toda a tela e some */
+        opacity: 0;
+    }
 }

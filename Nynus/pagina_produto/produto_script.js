@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const buyButton = document.querySelector('.btn-comprar');
     const priceElement = document.querySelector('.preco');
     const spamtonGif = document.getElementById('spamton');
-    
+
     // O elemento chaosContainer é mantido no DOM, mas não é usado neste código.
 
     // 2. Variáveis de controle
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const priceStartTime = 5000; // Sincronização com o Spamton (50% de 10s)
 
     // NOVO: Ajuste este valor para controlar a velocidade de contagem (ex: 2.0 = 2x mais rápido)
-    const JUMP_FACTOR = 100.0; 
+    const JUMP_FACTOR = 100.0;
 
 
     // NOVO: 3. Função para iniciar o tremor PERMANENTE
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function formatPrice(number, decimals = 2) {
         // Formata a parte inteira (com pontos de milhar)
         const integerPart = Math.floor(number).toLocaleString('pt-BR');
-        
+
         // Formata a parte decimal
         const decimalStr = number.toFixed(decimals).split('.')[1] || '00';
 
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let currentInteger = priceParts[0] || 'R$ 999.999';
         let currentDecimal = priceParts[1] || '00';
 
-        
+
         let count = 0;
         let stackingDecimal = currentDecimal;
 
@@ -62,10 +62,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Adiciona um '9' ao lado direito da parte decimal
             stackingDecimal += '9';
-            
+
             // Atualiza o texto do preço com a nova formatação caótica
             priceElement.textContent = `${currentInteger},${stackingDecimal}`;
-            
+
             // Mantém o tremor enquanto empilha
             const xShake = Math.random() * 8 - 4;
             priceElement.style.transform = `translateX(${xShake}px)`;
@@ -77,9 +77,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // 6. Função FASE 1: Crescimento ULTRA RÁPIDO
     function rapidlyIncreasePrice() {
         let currentNumber = 0.00;
-        
-        priceElement.style.fontSize = '3em'; 
-        
+
+        priceElement.style.fontSize = '3em';
+
         const countInterval = setInterval(() => {
             // Aumento de velocidade controlado pelo JUMP_FACTOR
             const baseJump = 100000;
@@ -88,17 +88,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (currentNumber >= targetCountValue) {
                 currentNumber = targetCountValue;
-                
+
                 // FIM DA FASE 1 - INÍCIO IMEDIATO DA FASE 2
                 clearInterval(countInterval);
-                
+
                 const finalFormattedPrice = formatPrice(currentNumber);
-                
+
                 // Início do empilhamento imediatamente
-                startChaosStacking(finalFormattedPrice); 
+                startChaosStacking(finalFormattedPrice);
                 return;
             }
-            
+
             // Formata o número (R$ 999.999.999,00)
             priceElement.textContent = formatPrice(currentNumber);
 
@@ -106,35 +106,39 @@ document.addEventListener('DOMContentLoaded', () => {
             const xShake = Math.random() * 8 - 4;
             priceElement.style.transform = `translateX(${xShake}px)`;
 
-        }, 1); 
+        }, 1);
     }
 
 
     // 5. Função principal (gatilho)
     function startSpamtonEasterEgg(event) {
-        event.preventDefault(); 
-        if (isSpamtonActive) return; 
-        
-        isSpamtonActive = true; 
-        
+        event.preventDefault();
+        if (isSpamtonActive) return;
+
+        isSpamtonActive = true;
+
         // Atraso inicial para o choque (2 segundos)
         setTimeout(() => {
             // A. Inicia a animação do Spamton (10 segundos)
             spamtonGif.classList.add('animate');
-            
+
+            // NOVO: Tocar o áudio da risada do Spamton
+            const audio = new Audio('../pasta/spamtonLaugh.mp3');
+            audio.play().catch(e => console.log("Erro ao tocar áudio:", e));
+
             // B. Sincroniza o preço com a chegada do Spamton (5000ms)
             setTimeout(() => {
                 rapidlyIncreasePrice(); // Começa a contagem de preço (Fase 1)
-            }, priceStartTime); 
+            }, priceStartTime);
 
             // C. Limpa tudo depois que a animação do Spamton termina (10s)
             setTimeout(() => {
-                spamtonGif.classList.remove('animate'); 
+                spamtonGif.classList.remove('animate');
                 priceElement.style.transform = 'none';
                 isSpamtonActive = false;
             }, 10000 + priceStartTime);
-            
-        }, startDelay); 
+
+        }, startDelay);
     }
 
     // Adiciona o "ouvinte" de clique no botão

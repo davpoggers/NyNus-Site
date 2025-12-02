@@ -25,6 +25,6 @@ O projeto busca explorar desenvolvimento front-end e back-end.
 ---
 
 ### 💻 Visite no GitHub Pages
-https://davpoggers.github.io/NyNus-Site/Nynus/pagina_login/pagina_login.html
-usuário: teste@gmail.com
-senha: 123Teste
+https://davpoggers.github.io/NyNus-Site/Nynus/pagina_login/pagina_login.html <br> <br>
+Usuário: teste@gmail.com <br>
+Senha: 123Teste
